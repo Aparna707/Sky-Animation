@@ -1,0 +1,255 @@
+section
+{
+    position: relative;
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: skya 15s;
+    
+}
+
+/*Sky color animation*/
+@keyframes skya
+{
+    0%
+    {
+        background-color: rgb(151, 234, 240);
+    }
+    20% 
+    {
+        background-color: rgb(39, 211, 194);
+
+    }
+    40%
+    {
+        background-color: rgb(36, 95, 204);
+    }
+    50%
+    {
+        background-color: rgb(5, 50, 134);
+    }
+    60%
+    {
+        background-color: rgb(7, 36, 88);
+    }
+    70%
+    {
+        background-color: rgb(6, 12, 11);
+    }
+    100%
+    {
+        background-color: rgb(10, 10, 10);
+    }
+}
+
+.sun
+{
+    width: 600px;
+    margin-left: 150px;
+    height:500px;
+    background-color: rgb(250, 183, 120);
+    border-radius: 50%;
+    animation: sunc 12s forwards;
+    box-shadow: 0px 0px 25px 5px #ff8c1a;
+
+}
+@keyframes sunc 
+{
+    5% 
+    {
+        background-color:#FFDB58;
+    }
+    
+    30% 
+    {
+        background-color:#FFA62F;
+
+    }
+    40%
+    {
+        background-color:#FF8040;
+
+    }
+    50%
+    {
+        background-color: tomato;
+        transform: translateY(700px);
+    }
+    100%
+    {
+        opacity: 0;
+    }
+    
+}
+.moon
+{
+    margin-bottom: 500px;
+    margin-left: 120px;
+    width: 300px;
+    height:300px;
+    position: absolute;
+    background-color:transparent;
+    border-radius: 50%;
+    animation: moonc 20s forwards;
+    box-shadow: -20px 10px white;
+    opacity: 0;
+}
+@keyframes moonc 
+{
+    20%
+    {
+        opacity:0.5;
+    }
+    30%
+    {
+        opacity: 1;
+       
+    }
+    70%
+    {
+        opacity: 1;
+        
+        
+    }
+    90%
+    {
+        opacity: 1;
+        transform: translateY(-200px);
+    }
+
+
+}
+
+img
+{
+    margin-top: 180px;
+    padding-right: 20px;
+    height: 70%;
+    width: 40%;
+    position: fixed;
+    padding-left: 10px;
+}
+section .star
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: animate 20s ease-in-out infinite,
+    backgroundmove 16s linear infinite;
+}
+
+section .star.star1
+{
+    background: url(star1.png);
+    animation-delay: 0s;
+    
+}
+section .star.star2
+{
+    background: url(star2.png);
+    animation-delay: -1s;
+}
+section .star.star3
+{
+    background: url(star3.png);
+    animation-delay: -2s;
+}
+section .star.star4
+{
+    background: url(star4.png);
+    animation-delay: -3s;
+}
+section .star.star5
+{
+    background: url(star5.png);
+    animation-delay: -4s;
+}
+section .star.star6
+{
+    background: url(star6.png);
+    animation-delay: -5s;
+}
+section .star.star7
+{
+    background: url(star7.png);
+    animation-delay: -6s;
+}
+section .star.star8
+{
+    background: url(star8.png);
+    animation-delay: -7s;
+}
+@keyframes animate
+{
+    20%
+    {
+        opacity: 0;
+    }
+    35%,55%,75%,85%,100%
+    {
+        opacity:1;
+    }
+    45%,60%,80%,90%,95%
+    {
+        opacity: 0;
+    }
+
+}
+
+@keyframes backgroundmove
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(2);
+    }
+}
+.light1
+{
+    background: url(light3.png);
+    height:600px;
+    width: 20px;
+    margin-bottom: 10px;
+    padding-left: 730px;
+    background-repeat: no-repeat;
+}
+h2 
+{
+    color: transparent;
+    font-weight: 20;
+    font-size: 7em;
+    -webkit-text-stroke: 2px #fff;
+    padding-bottom: 300px;
+    position: absolute;
+    animation: textn 15s ;
+    opacity: 0;
+
+}
+@keyframes textn 
+{
+
+    90%
+    {
+        opacity: 1;
+    }
+
+}
+audio
+{
+    position: absolute;
+    opacity: 0;
+    padding-left: 800px;
+    height: 20px;
+    width: 100px;
+    padding-top: 500px;
+}
